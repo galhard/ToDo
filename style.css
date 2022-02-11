@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: auto;
+  font-family: "Rubik Mono One", sans-serif;
+  background-color: #384d48;
+}
+
+ion-icon {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.list {
+  width: 80rem;
+  margin: auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.list__tasks {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+.list__tasks__task {
+  margin: 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+.list__todo {
+  border-right: 2px dashed #333;
+}
+.list__todo .task__name {
+  color: #d8d4d5;
+  background-color: #acad94;
+}
+.list__done .task__name {
+  color: #d8d4d5;
+  background-color: #6e7271;
+  opacity: 0.5;
+}
+
+.task__name {
+  font-size: 2.4rem;
+  border-radius: 1rem;
+  padding: 0.5rem 0.5rem;
+}
