@@ -18,8 +18,8 @@ html {
 }
 body {
   // height: 200rem;
-  margin: auto;
-  font-family: 'Rubik Mono One', sans-serif;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
   background-color: $backgroundColor;
 }
 ion-icon {
@@ -31,48 +31,69 @@ ion-icon {
 }
 .list {
   // height: 80rem;
-  width: 80rem;
-  margin: auto auto;
+  width: 80%;
+  margin: 5rem auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   // position: fixed;
   // left: 50%;
   // top: 50%;
   // transform: translate(-50%, -50%);
   &__tasks {
-    width: 50%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     gap: 2rem;
+    margin: 2rem 0;
 
     &__task {
       // width: 50%;
-      margin: 0 3rem;
+      margin: 0 1rem;
       display: flex;
+      align-self: flex-end;
       align-items: center;
       text-align: center;
-      gap: 4rem;
+      gap: 2rem;
     }
   }
   &__todo {
-    border-right: 2px dashed #333;
+    width: 40%;
+
     & .task__name {
       color: $todoTextColor;
       background-color: $todoBackgroundColor;
     }
   }
   &__done {
+    width: 40%;
+
     & .task__name {
       color: $doneTextColor;
       background-color: $doneBackgroundColor;
       opacity: 0.5;
     }
+    & .list__tasks__task {
+      align-self: flex-start;
+    }
   }
+}
+.line {
+  width: 20%;
 }
 .task__name {
   font-size: 2.4rem;
+  font-weight: 700;
   border-radius: 1rem;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
+  max-width: 100%;
+}
+.list::after {
+  content: '';
+  height: 20%;
+  width: 2px;
+  border-right: 2px dashed #333;
+  position: absolute;
 }
