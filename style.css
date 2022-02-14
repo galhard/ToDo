@@ -21,13 +21,31 @@ ion-icon {
   cursor: pointer;
 }
 
+.flexDir-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5rem;
+}
+
 .hide {
   display: none;
 }
 
+.input-text {
+  width: 20%;
+  height: 3rem;
+}
+
 .list {
   width: 80%;
-  margin: 5rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

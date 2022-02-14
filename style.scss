@@ -26,13 +26,23 @@ ion-icon {
   font-size: 3rem;
   cursor: pointer;
 }
+.flexDir-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem;
+}
 .hide {
   display: none;
+}
+.input-text {
+  width: 20%;
+  height: 3rem;
 }
 .list {
   // height: 80rem;
   width: 80%;
-  margin: 5rem auto;
+  // margin: 5rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
