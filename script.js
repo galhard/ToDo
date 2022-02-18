@@ -41,11 +41,15 @@ function working() {
 //After press ENTER
 inputText.addEventListener('keypress', function (e) {
   if (e.key === 'Enter') {
-    listToDo.innerHTML += `<div class="list__todo__task"><ion-icon class="delete-task hide" name="trash-outline"></ion-icon></ion-icon>
+    if (inputText.value === '') {
+      alert('type some task in the text field'.toUpperCase());
+    } else {
+      listToDo.innerHTML += `<div class="list__todo__task"><ion-icon class="delete-task hide" name="trash-outline"></ion-icon></ion-icon>
     <div class="task__name">${inputText.value}</div>
     <ion-icon class="arrow-right hide" name="arrow-forward-outline"></ion-icon>
   </div>`;
-    inputText.value = '';
+      inputText.value = '';
+    }
   }
   working();
 });
@@ -70,4 +74,3 @@ inputBox.addEventListener('mouseenter', function () {
 inputBox.addEventListener('mouseleave', function () {
   addTask.classList.add('hide');
 });
-//ALL TASK DONE INFO
