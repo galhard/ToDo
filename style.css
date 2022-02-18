@@ -74,7 +74,7 @@ ion-icon:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 30rem;
+  min-height: 29.4rem;
   font-size: 2.4rem;
   text-transform: uppercase;
   -webkit-writing-mode: vertical-lr;
@@ -106,9 +106,6 @@ ion-icon:before {
   grid-area: input;
   position: relative;
   z-index: 100;
-}
-.input:hover, .input:active {
-  width: 200%;
 }
 .input .add__task {
   position: absolute;
